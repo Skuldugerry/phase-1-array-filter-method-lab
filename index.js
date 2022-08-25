@@ -7,7 +7,7 @@ function findMatching(drivers,message){
 
 function fuzzyMatch(drivers,string){
     return drivers.filter(function(retutnValue){
-        return retutnValue===string || retutnValue===string['0']
+        return retutnValue[0]===string[0]
     })
 }
 
